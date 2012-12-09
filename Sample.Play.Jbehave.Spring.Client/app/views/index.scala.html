@@ -1,15 +1,26 @@
-@(title: String)(content: String)
+@(title: String)(content: String)(firstNumber: String)(secondNumber: String)()(additionResult: String)
 
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>@title</title>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-    <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
-</head>
-            <body>
-    @content
-            </body>
-    </html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <h2>@content</h2>
+        <hr/>
+        <div>
+            @helper.form(action = routes.Application.addNumbers(), 'id -> "calculationForm") {
+                <b>First Number </b>&emsp;&emsp;&nbsp;<input type="number" name="firstNumber" value="@firstNumber"> <br/><br/>
+                <b>Second Number </b>&emsp;<input type="number" name="secondNumber" value="@secondNumber"> <br/><br/>
+                <input type="submit" value="Add Numbers">&emsp;
+                @if( additionResult != null  && additionResult.trim() != "" ){
+                    <b>Result =</b>&nbsp;@additionResult
+                }
+            }
+        </div>
+    </body>
+</html>

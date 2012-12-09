@@ -22,6 +22,7 @@ public class MathSteps {
 
     @Given("First number = $firstNumber")
     public void firstNumberIs(int firstNumber) {
+        assertThat(mathService, notNullValue());
         this.doAddNumbersRequest.setFirstNumber(firstNumber);
     }
 
