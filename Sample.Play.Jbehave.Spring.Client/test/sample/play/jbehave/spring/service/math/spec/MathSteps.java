@@ -33,9 +33,7 @@ public class MathSteps {
 
     @When("Adding the First & Second number")
     public void addingTheFirstAndSecondNumber() {
-        // Do something
         assertThat(mathService, notNullValue());
-        //dummyService = new DummyService();
         doAddNumbersResponse = mathService.doAddNumbers(doAddNumbersRequest);
     }
 
