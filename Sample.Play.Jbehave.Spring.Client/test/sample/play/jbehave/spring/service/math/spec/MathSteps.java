@@ -40,7 +40,7 @@ public class MathSteps {
     }
 
     @Then("the addition's result is $expectedResult")
-    public void theGridShouldLookLike(int expectedResult) {
+    public void theAdditionResultIs(int expectedResult) {
         // Evaluate result
         assertThat(doAddNumbersResponse.getResult(), equalTo(expectedResult));
     }
