@@ -44,8 +44,12 @@ HOW TO - Prove that the dependency injection is working in the JBehave Test ( In
 
 Future TO-DOs:
 --------------
-1. Extend the sample to cover real-life problems or business processes (e.g. CRUD sample, Credentials check, report, etc)
-2. And many more.
+1. Extend the sample to cover real-life problems or business processes (e.g. CRUD sample, Credentials check, reporting, etc).
+2. Add Runtime Integration testing using Webspec API ( http://watij.com/webspec-api/).
+3. Extend the current 2-tier app model to n-tier by moving the injected service into a REST resource.
+4. Improving the View pages by using Jqwidget, Knockout.js or Extjs.
+5. Utilising Akka actor as the service's wrapper-manager.
+6. And many more.
 
 Reference links that inspired us creating this sample application:
 ------------------------------------------------------------------
