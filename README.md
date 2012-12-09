@@ -5,8 +5,13 @@ Play 2.0's sample app which integrates JBehave &amp; Spring frameworks.
 
 Things to do before running the sample:
 ---------------------------------------
-1. Open command line box & change directory to the Sample.Play.Jbehave.Spring.Client.
-2. Type & enter: play clean compile
+1. Install these following softwares in your machine:
+  - JDK 7 with latest updates version.
+  - Latest version of Play 2.1RC or above (www.playframework.org).
+  - Git client
+  - Intellij IDEA 11.x-12.x (Optional)
+2. Open command line box & change directory to the Sample.Play.Jbehave.Spring.Client.
+3. Type & enter: play clean compile
 
 HOW TO - Run the unit test:
 ---------------------------
