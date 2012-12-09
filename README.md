@@ -33,7 +33,6 @@ The anatomy of Sample.Play.Jbehave.Spring.Client project:
 1. app folder - contains controllers & views packages. Each of the package contains the web's main controller (Application.java) & html page (index.scala.html).
 2. conf folder - The place of where Play's config, routes & Spring module config file (application-context.xml) reside. 
 3. test folder - Contains 1 test package at the moment (sample.play.jbehave.spring.service.math.spec) where JBehave story file, JUnitStory & steps classes reside.
-4. public folder - We put jqwidget & knockout js under javascripts sub-directory.
 
 HOW TO - Prove that the dependency injection is working in the JBehave Test ( Intellij IDEA 11.x-12.x):
 -------------------------------------------------------------------------------------------------------
