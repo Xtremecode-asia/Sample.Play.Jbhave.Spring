@@ -42,6 +42,11 @@ HOW TO - Prove that the dependency injection is working in the JBehave Test ( In
 4. Re-rename the .jar library in step #2 to its original name.
 5. Re-run the JBehave unit test in the command line. Ensure that the test is passed.
 
+Future TO-DOs:
+--------------
+1. Extend the sample to cover real-life problems or business processes (e.g. CRUD sample, Credentials check, report, etc)
+2. And many more.
+
 Reference links that inspired us creating this sample application:
 ------------------------------------------------------------------
 1. "Dependency Injection with the Spring Framework - Tutorial" (http://bit.ly/MebzQd).
