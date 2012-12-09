@@ -9,8 +9,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
     <context:annotation-config/>
-    <!--<context:component-scan base-package="efs.dummy.spec" />-->
-    <!--<context:component-scan base-package="efs.module.dummy" />-->
     <context:component-scan base-package="controllers" />
     <context:component-scan base-package="sample.play.jbehave.spring.service" />
     <context:component-scan base-package="sample.play.jbehave.spring.service.math.spec"/>
