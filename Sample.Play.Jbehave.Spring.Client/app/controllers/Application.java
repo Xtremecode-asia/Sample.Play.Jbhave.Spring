@@ -27,7 +27,7 @@ public class Application extends Controller {
     }
 
     /**
-     * Receive form's values where is submitted from index.scala.html.
+     * Receive form's values where are submitted from index.scala.html.
      * HTML Method: POST
      * URL: /addNumbers
      * @return index.scala.html.page which carries the math addition's result
@@ -54,7 +54,6 @@ public class Application extends Controller {
     }
 
     private static int getSubmittedNumber(String inputName, Map<String, String[]> submittedValues) {
-        // TODO: Clean up the inputs
         if (submittedValues.get(inputName).length > 0){
             return tryParseInt(submittedValues.get(inputName)[0]);
         }
